@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra</title>
+    <style>
+        body{background-image: url('https://static.vecteezy.com/system/resources/previews/000/834/558/original/3d-cube-golden-box-abstract-background-vector.jpg') ;
+background-size: cover;}
+
+        header{text-align: center;
+                color: black;
+                background-color: rgb(148, 80, 25);
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 40px;}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            <?php if (!$formularioVisible) echo "display: none; ";?>
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="submit"] {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .form-group .total {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        footer{background-color: rgb(6, 7, 7);
+                color:white;
+                font-family: fantasy;
+                text-align: center;}
+            
+                footer{background-color: rgb(6, 7, 7);
+                color:white;
+                font-family: fantasy;
+                text-align: center;}
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .pagination a {
+            color: #333;
+            background-color: #ddd;
+            border: 1px solid #999;
+            padding: 5px 10px;
+            text-decoration: none;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+        .pagination a:hover {
+            background-color: #aaa;
+            color: #fff;
+        }
+
+        .content {
+            flex: 1;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .footer .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer .social-icons a:hover {
+            color: #ddd;
+        }
+        .footer .links {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer .links li {
+            margin: 5px 0;
+        }
+        .footer .links a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer .links a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    <script>
+        function calculateTotal() {
+            const cuantificar = document.getElementById('cuantificar').value;
+            const precio = document.getElementById('precio').value;
+            const total = cuantificar * precio;
+            document.getElementById('total').innerText = 'Total: $' + total.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <header>COMPRA EN LINEA</header>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre del Comprador:</label>
+            <input type="nombre" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="fecha">Fecha de la Compra:</label>
+            <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <div class="form-group">
+            <label for="producto">Producto:</label>
+            <input type="producto" id="producto" name="producto" value="PEIBY-0712">
+        </div>
+        <div class="form-group">
+            <label for="cuantificar">Cantidad:</label>
+            <input type="cuantificar" id="cuantificar" name="cuantificar" required oninput="calculateTotal()">
+        </div>
+        <div class="form-group">
+            <label for="precio">Precio:</label>
+            <input type="precio" id="precio" name="precio" value="10,000" oninput="calculateTotal()">
+        </div>
+        <div class="form-group">
+            <span id="total" class="total">Total: $0.00</span>
+        </div>
+        <div class="form-group">
+        <input type="submit" name="enviar" value="REALIZAR COMPRA">
+        </div>
+    </form>
+    <div class="pagination"> <a href="C:/Users/Evelin%20Jattar/OneDrive/Escritorio/PAGINA/index.html">Pagina principal</a></div>
+    
+<div class="content">
+    <!-- Contenido principal de la página -->
+  </div>
+  <footer class="footer">
+    <div class="container">
+        <div class="logo">
+            JATTURRED
+        </div>
+        <div class="social-icons">
+            <a href="tel:+525565843625" target="_blank">Telefóno</a>
+            <a href="https://wa.me/5567752187" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/jattar.xsw?igsh=cTI2YzVtdmhjM2N6" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/ribi.jattar?mibextid=ZbWKwL" target="_blank">Facebook</a>
+        </div>
+        <ul class="links">
+            <li><a href="C:/Users/Evelin%20Jattar/OneDrive/Escritorio/PAGINA/fil_emp.html">FILOSOFÍA EMPRESARIAL</a></li>
+            <li><a href="C:/Users/Evelin%20Jattar/OneDrive/Escritorio/PAGINA/registro.html">REGISTRARSE</a></li>
+            <li><a href="C:/Users/Evelin%20Jattar/OneDrive/Escritorio/PAGINA/comprass.html">COMPRA EN LÍNEA</a></li>
+            <li><a href="C:/Users/Evelin%20Jattar/OneDrive/Escritorio/PAGINA/mas.html">ATENCIÓN A CLIENTES Y MÁS</a></li>
+        </ul>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <style>
+      body{background-image: url('https://static.vecteezy.com/system/resources/previews/000/834/558/original/3d-cube-golden-box-abstract-background-vector.jpg') ;
+background-size: cover;}
+
+        form {background-color: white;
+                <?php if (!$formularioVisible) echo "display: none; ";?>}
+        header{text-align: center;
+                color: black;
+                background-color: rgb(148, 80, 25);
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 40px;}
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+          background-color: #45a049;
+        }
+        
+        input[type="reset"] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type="reset"]:hover {
+          background-color: #45a049;}
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        footer{background-color: rgb(6, 7, 7);
+                color:white;
+                font-family: fantasy;
+                text-align: center;}
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .pagination a {
+            color: #333;
+            background-color: #ddd;
+            border: 1px solid #999;
+            padding: 5px 10px;
+            text-decoration: none;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+        .pagination a:hover {
+            background-color: #aaa;
+            color: #fff;
+        }
+
+        .content {
+            flex: 1;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .footer .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer .social-icons a:hover {
+            color: #ddd;
+        }
+        .footer .links {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer .links li {
+            margin: 5px 0;
+        }
+        .footer .links a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header>REGÍSTRATE</header>
+<form action="#" method="post">
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" required><br>
+  <label for="email">Correo:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="telefono">Teléfono:</label><br>
+  <input type="tel" id="telefono" name="telefono" required><br><br>
+  <label for="password">Contraseña:</label><br>
+  <input type="password" id="password" name="password" required><br><br>
+
+  <input type="submit" name="enviar" value="ENVIAR">
+  <input type="reset" name="cancelar" value="CANCELAR">
+</form> 
+<div class="pagination"> <a href="C:/Users/Evelin%20Jattar/OneDrive/Escritorio/PAGINA/index.html">Pagina principal</a></div>
+<br>
+
+<div class="content">
+  <!-- Contenido principal de la página -->
+</div>
+<footer class="footer">
+  <div class="container">
+      <div class="logo">
+          JATTURRED
+      </div>
+      <div class="social-icons">
+          <a href="tel:+525565843625" target="_blank">Telefóno</a>
+          <a href="https://wa.me/5567752187" target="_blank">WhatsApp</a>
+          <a href="https://www.instagram.com/jattar.xsw?igsh=cTI2YzVtdmhjM2N6" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/ribi.jattar?mibextid=ZbWKwL" target="_blank">Facebook</a>
+      </div>
+      <ul class="links">
+          <li><a href="C:/Users/Evelin%20Jattar/OneDrive/Escritorio/PAGINA/fil_emp.html">FILOSOFÍA EMPRESARIAL</a></li>
+          <li><a href="C:/Users/Evelin%20Jattar/OneDrive/Escritorio/PAGINA/registro.html">REGISTRARSE</a></li>
+          <li><a href="C:/Users/Evelin%20Jattar/OneDrive/Escritorio/PAGINA/comprass.html">COMPRA EN LÍNEA</a></li>
+          <li><a href="C:/Users/Evelin%20Jattar/OneDrive/Escritorio/PAGINA/mas.html">ATENCIÓN A CLIENTES Y MÁS</a></li>
+      </ul>
+  </div>
+</footer>
+</body>
+</html>
